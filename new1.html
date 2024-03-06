@@ -1,0 +1,357 @@
+<html>
+<body>
+<center>
+
+  <br>
+  <h2>Workedio!</h2>
+  <h4> <u>DATA STRUCTURES FQA </u></h4>
+  </center>
+<h2><strong>Data Structures Interview Questions :-</strong></h2>
+<h3><strong>1. What is data structure?</strong></h3>
+<p>a data structure is a way of organizing data that considers not only the items stored, but also their relationship to each other. advance knowledge about the relationship between data items allows designing of efficient algorithms for the manipulation of data.</p>
+<h3><strong>2. List out the areas in which data structures are applied extensively?</strong></h3>
+<ul>
+<li>compiler design,</li>
+<li>operating system,</li>
+<li>database management system,</li>
+<li>statistical analysis package,</li>
+<li>numerical analysis,</li>
+<li>graphics,</li>
+<li>artificial Intelligence,</li>
+<li>simulation</li>
+</ul>
+<h3><strong>3. What are the major data structures used in the following areas : Rdbms, network data model and Hierarchical data model.</strong></h3>
+<p>Rdbms = array (i.e. array of structures)<br>
+network data model = graph<br>
+Hierarchical data model = trees</p>
+<h3><strong>4. If you are using c language to implement the heterogeneous linked list, What pointer type will you use?</strong></h3>
+<p>the heterogeneous linked list contains different data types in its nodes and we need a link, pointer to connect them. It is not possible to use ordinary pointers for this. so we go for void pointer. Void pointer is capable of storing pointer to any type as it is a generic pointer type.</p>
+<h3><strong>5. Minimum number of queues needed to implement the priority queue?</strong></h3>
+<p>two. one queue is used for actual storing of data and another for storing priorities.</p>
+<h3><strong>6. What is the data structures used to perform recursion?</strong></h3>
+<p>stack. because of its lIfo (last In first out) property it remembers its ‘caller’ so knows whom to return when the function has to return. Recursion makes use of system stack for storing the return addresses of the function calls.</p>
+<p>every recursive function has its equivalent iterative (non-recursive) function. even when such equivalent iterative procedures are written, explicit stack is to be used.</p>
+<h3><strong>7. What are the notations used in evaluation of arithmetic expressions using prefix and postfix forms?</strong></h3>
+<p>polish and Reverse polish notations.</p>
+<h3><strong>8. convert the expression ((a + b) * c – (d – e) ^ (f + g)) to equivalent prefix and postfix notations.</strong></h3>
+<p>prefix notation: – * +abc ^ – de + fg<br>
+postfix notation: ab + c * de – fg + ^ –</p>
+<h3><strong>9. sorting is not possible by using which of the following methods? (Insertion, selection, exchange, deletion)</strong></h3>
+<p>sorting is not possible in deletion. using insertion we can perform insertion sort, using selection we can perform selection sort, using exchange we can perform the bubble sort (and other similar sorting methods). but no sorting method can be done just using deletion.</p>
+<h3><strong>10. What are the methods available in storing sequential files ?</strong></h3>
+<ol>
+<li>straight merging,</li>
+<li>natural merging,</li>
+<li>polyphase sort,</li>
+<li>distribution of Initial runs.</li>
+</ol>
+<p><strong>11. list out few of the application of tree data-structure?</strong></p>
+
+<li>the manipulation of arithmetic expression,</li>
+<li>symbol table construction,</li>
+<li>syntax analysis.</li>
+
+<p><strong>12. list out few of the applications that make use of multilinked structures?</strong></p>
+<ul>
+<li>sparse matrix,</li>
+<li>Index generation.</li>
+</ul>
+<p><strong>13. In tree construction which is the suitable efficient data structure? (array, linked list, stack, queue)</strong></p>
+<p>linked list is the suitable efficient data structure.</p>
+<p><strong>14. What is the type of the algorithm used in solving the 8 queens problem?</strong></p><p>backtracking.</p>
+<p><strong>15. In an aVl tree, at What condition the balancing is to be done?</strong></p>
+<p>If the ‘pivotal value’ (or the ‘Height factor’) is greater than 1 or less than -1.</p>
+<p><strong>16. What is the bucket size, when the overlapping and collision occur at same time?</strong></p>
+<p>one. If there is only one entry possible in the bucket, when the collision occurs, there is no way to accommodate the colliding value. this results in the overlapping of values.</p>
+<p><strong>17. classify the Hashing functions based on the various methods by which the key value is found.</strong></p>
+
+<li>direct method,</li>
+<li>subtraction method,</li>
+<li>modulo-division method,</li>
+<li>digit-extraction method,</li>
+<li>mid-square method,</li>
+<li>folding method,</li>
+<li>pseudo-random method.</li>
+
+<p><strong>18. What are the types of collision Resolution techniques and the methods used in each of the type?</strong></p>
+<p>open addressing (closed hashing), the methods used include: overflow block.<br>
+closed addressing (open hashing), the methods used include: linked list, binary tree.</p>
+<p><strong>19. In Rdbms, What is the efficient data structure used in the internal storage representation?</strong></p><p>b+ tree. because in b+ tree, all the data is stored only in leaf nodes, that makes searching easier. this corresponds to the records that shall be stored in leaf nodes.</p>
+<p><strong>20. What is a spanning tree?</strong></p>
+<p>a spanning tree is a tree associated with a network. all the nodes of the graph appear on the tree once. a minimum spanning tree is a spanning tree organized so that the total edge weight between nodes is minimized.</p>
+<p><strong>21. does the minimum spanning tree of a graph give the shortest distance between any 2 specified nodes?</strong></p>
+<p>no. the minimal spanning tree assures that the total weight of the tree is kept at its minimum. but it doesn’t mean that the distance between any two nodes involved in the minimum-spanning tree is minimum.</p>
+<p><strong>22. Which is the simplest file structure? (sequential, Indexed, Random)</strong></p><p>sequential is the simplest file structure.</p>
+<p><strong>23. Whether linked list is linear or non-linear data structure?</strong></p>
+<p>according to access strategies linked list is a linear one.<br>
+according to storage linked list is a non-linear one.</p>
+<p><strong>24. define double linked list?</strong></p>
+<p>It is a collection of data elements called nodes,</p>
+<p>where each node is divided into three parts:</p>
+
+<li>an info field that contains the information stored in the node.</li><li>left field that contain pointer to node on left side.</li>
+<li>Right field that contain pointer to node on right side.</li>
+<li>adv Java Interview questions</li>
+</ul>
+<p><strong>25. Is It necessary to sort a file before searching a particular Item ?</strong></p>
+<ol>
+<li>If less work is involved in searching a element than to sort and then extract, then we don’t go for sort.</li>
+<li>If frequent use of the file is required for the purpose of retrieving specific element, it is more efficient to sort the file.</li>
+<li>thus it depends on situation.</li>
+</ol>
+<p><strong>26. What are the Issues that Hamper the efficiency In sorting a file?</strong></p>
+<p>the issues are:</p>
+<ul>
+<li>length of time required by the programmer in coding a particular sorting program.</li>
+<li>amount of machine time necessary for running the particular program.</li>
+<li>the amount of space necessary for the particular program .</li>
+<li>object oriented analysis and design Interview questions</li>
+</ul>
+<p><strong>27. calculate the efficiency of sequential search?</strong></p>
+<p>the number of comparisons depends on where the record with the argument key appears in the table.</p>
+<ul>
+<li>If it appears at first position then one comparison</li>
+<li>If it appears at last position then n comparisons</li>
+<li>average=(n+1)/2 comparisons</li>
+<li>unsuccessful search n comparisons</li>
+<li>number of comparisons in any case is o (n).</li>
+</ul>
+<p><strong>28. Is any Implicit arguments are passed to a function When It Is called?</strong></p>
+<p>yes there is a set of implicit arguments that contain information necessary for the function to execute and return correctly. one of them is return address which is stored within the function’s data area, at the time of returning to calling program the address is retrieved and the function branches to that location.</p>
+<p><strong>29. parenthesis Is never Required In postfix or prefix expressions, Why?</strong></p>
+<p>parenthesis is not required because the order of the operators in the postfix /prefix expressions determines the actual order of operations in evaluating the expression.</p>
+<p><strong>30. list out the areas In Which data structures are applied extensively?</strong></p>
+<ul>
+<li>compiler design,</li>
+<li>operating system,</li>
+<li>database management system,</li>
+<li>statistical analysis package,</li>
+<li>numerical analysis,</li>
+<li>graphics,</li>
+<li>artificial Intelligence,</li>
+<li>simulation.</li>
+</ul>
+<p><strong>31. What are the major data structures used In the following areas : network data model &amp; Hierarchical data model?</strong></p>
+<p>Rdbms – array (i.e. array of structures)<br>
+network data model – graph<br>
+Hierarchical data model – trees</p>
+<p><strong>32. If you are using c language to Implement the Heterogeneous linked list, What pointer type Will you use?</strong></p>
+<p>the heterogeneous linked list contains different data types in its nodes and we need a link, pointer to connect them. It is not possible to use ordinary pointers for this. so we go for void pointer. Void pointer is capable of storing pointer to any type as it is a generic pointer type.</p>
+<p><strong>33. minimum number of queues needed to Implement the priority queue?</strong></p>
+<p>two. one queue is used for actual storing of data and another for storing priorities.</p>
+<p><strong>34. What Is the data structures used to perform Recursion?</strong></p>
+<p>stack. because of its lIfo (last In first out) property it remembers its ‘caller’ so knows whom to return when the function has to return. Recursion makes use of system stack for storing the return addresses of the function calls.</p>
+<p>every recursive function has its equivalent iterative (non-recursive) function. even when such equivalent iterative procedures are written, explicit stack is to be used.</p>
+<p><strong>35. What are the notations used In evaluation of arithmetic expressions using prefix and postfix forms?</strong></p>
+<p>polish and Reverse polish notations.</p>
+<p><strong>36. convert the expression ((a + b) * c – (d – e) ^ (f + g)) to equivalent prefix and postfix notations?</strong></p>
+<p>prefix notation:</p>
+<p>^ – * +abc – de + fg</p>
+<p>postfix notation:</p>
+<p>ab + c * de – – fg + ^</p>
+<p><strong>37. list out few of the application of tree data-structure?</strong></p>
+<p>the manipulation of arithmetic expression, symbol table construction &amp; syntax analysis.</p>
+<p><strong>38. list out few of the applications that make use of multilinked structures?</strong></p>
+<p>sparse matrix, Index generation.</p>
+<p><strong>39. What Is the type of the algorithm used In solving the 8 queens problem?</strong></p>
+<p>backtracking.</p>
+<p><strong>40. In an avl tree, at What condition the balancing Is to be done?</strong></p>
+<p>If the ‘pivotal value’ (or the ‘Height factor’) is greater than 1 or less than –1.</p>
+<p><strong>41. there are 8, 15, 13, 14 nodes Were there In 4 different trees. Which of them could Have formed a full binary tree?</strong></p>
+<p>In general: there are 2n-1 nodes in a full binary tree. by the method of elimination:</p>
+<p>full binary trees contain odd number of nodes. so there cannot be full binary trees with 8 or 14 nodes, so rejected. With 13 nodes you can form a complete binary tree but not a full binary tree. so the correct answer is 15.</p>
+<p><strong>42. In Rdbms, What Is the efficient data structure used In the Internal storage Representation?</strong></p>
+<p>b+ tree. because in b+ tree, all the data is stored only in leaf nodes, that makes searching easier. this corresponds to the records that shall be stored in leaf nodes.</p>
+<p><strong>43. What Is a spanning tree?</strong></p>
+<p>a spanning tree is a tree associated with a network. all the nodes of the graph appear on the tree once. a minimum spanning tree is a spanning tree organized so that the total edge weight between nodes is minimized.</p>
+<p><strong>44. Does the minimal spanning tree of a graph give the shortest distance between any 2 specified nodes?</strong></p>
+<p>no! minimal spanning tree assures that the total weight of the tree is kept at its minimum. but it doesn’t mean that the distance between any two nodes involved in the minimal-spanning tree is minimum.</p>
+<p><strong>45. difference between calloc and malloc ?</strong></p>
+<p>malloc: allocate n bytes.<br>
+calloc: allocate m times n bytes initialized to 0.</p>
+<p><strong>46. What are the major data structures used In the following areas : Rdbms, network data model &amp; Hierarchical data model?</strong></p>
+<ul>
+<li>Rdbms array (i.e. array of structures)</li>
+<li>network data model graph</li>
+<li>Hierarchical data model trees.</li>
+</ul>
+<p><strong>47. Which file contains the definition of member functions?</strong></p>
+<p>definitions of member functions for the linked list class are contained in the linkedlist.cpp file.</p>
+<p><strong>48. How Is any data structure application Is classified among files?</strong></p>
+<p>a linked list application can be organized into a header file, source file and main application file. the first file is the header file that contains the definition of the node structure and the linkedlist class definition. the second file is a source code file containing the implementation of member functions of the linkedlist class. the last file is the application file that contains code that creates and uses the linkedlist class.</p>
+<p><strong>49. What member function places a new node at the end of the linked list?</strong></p>
+<p>the appendnode() member function places a new node at the end of the linked list. the appendnode() requires an integer representing the current data of the node.</p>
+<p><strong>50. What Is linked list ?</strong></p>
+<p>linked list is one of the fundamental data structures. It consists of a sequence of ? nodes, each containing arbitrary data fields and one or two (”links”) pointing to the next and/or previous nodes. a linked list is a self-referential datatype because it contains a pointer or link to another data of the same type. linked lists permit insertion and removal of nodes at any point in the list in constant time, but do not allow random access.</p>
+<p><strong>51. What does each entry In the link list called?</strong></p>
+<p>each entry in a linked list is called a node. think of a node as an entry that has three sub entries. one sub entry contains the data, which may be one attribute or many attributes. another points to the previous node, and the last points to the next node. When you enter a new item on a linked list, you allocate the new node and then set the pointers to previous and next nodes.</p>
+<p><strong>52. How Is the front of the queue calculated ?</strong></p>
+<p>the front of the queue is calculated by front = (front+1) % size.</p>
+<p><strong>53. Why Is the Isempty() member method called?</strong></p>
+<p>the isempty() member method is called within the dequeue process to determine if there is an item in the queue to be removed i.e. isempty() is called to decide whether the queue has at least one element. this method is called by the dequeue() method before returning the front element.</p>
+<p><strong>54. Which process places data at the back of the queue?</strong></p>
+<p>enqueue is the process that places data at the back of the queue.</p>
+<p><strong>55. What Is the Relationship between a queue and Its underlying array?</strong></p>
+<p>data stored in a queue is actually stored in an array. two indexes, front and end will be used to identify the start and end of the queue.</p>
+<p>When an element is removed front will be incremented by 1. In case it reaches past the last index available it will be reset to 0. then it will be checked with end. If it is greater than end queue is empty.</p>
+<p>When an element is added end will be incremented by 1. In case it reaches past the last index available it will be reset to 0. after incrementing it will be checked with front. If they are equal queue is full.</p>
+<p><strong>56. What Is a queue ?</strong></p>
+<p>a queue is a sequential organization of data. a queue is a first in first out type of data structure. an element is inserted at the last position and an element is always taken out from the first position.</p>
+<p><strong>57. What does Isempty() member method determines?</strong></p>
+<p>isempty() checks if the stack has at least one element. this method is called by pop() before retrieving and returning the top element.</p>
+<p><strong>58. What method Removes the Value from the top of a stack?</strong></p>
+<p>the pop() member method removes the value from the top of a stack, which is then returned by the pop() member method to the statement that calls the pop() member method.</p>
+<p><strong>59. What method Is used to place a Value onto the top of a stack?</strong></p>
+<p>push() method, push is the direction that data is being added to the stack. push() member method places a value onto the top of a stack.</p>
+<p><strong>60. Run time memory allocation Is Known as ?</strong></p>
+<p>allocating memory at runtime is called a dynamically allocating memory. In this, you dynamically allocate memory by using the new operator when declaring the array.</p>
+<p>for example : int grades[] = new int[10];</p>
+<p><strong>61. How do you assign an address to an element of a pointer array ?</strong></p>
+<p>We can assign a memory address to an element of a pointer array by using the address operator, which is the ampersand (&amp;), in an assignment statement such as ptemployee[0] = &amp;projects[2];</p>
+<p><strong>62. Why do We use a multidimensional array?</strong></p>
+<p>a multidimensional array can be useful to organize subgroups of data within an array. In addition to organizing data stored in elements of an array, a multidimensional array can store memory addresses of data in a pointer array and an array of pointers.</p>
+<p>multidimensional arrays are used to store information in a matrix form.</p>
+<p>e.g; a railway timetable, schedule cannot be stored as a single dimensional array. one can use a 3-d array for storing height, width and length of each room on each floor of a building.</p>
+<p><strong>63. What Is significance of ” * ” ?</strong></p>
+<p>the symbol “*” tells the computer that you are declaring a pointer. actually it depends on context.</p>
+<p>In a statement like int *ptr; the ‘*’ tells that you are declaring a pointer.<br>
+In a statement like int i = *ptr; it tells that you want to assign value pointed to by ptr to variable i.<br>
+the symbol “*” is also called as Indirection operator/ dereferencing operator.</p>
+<p><strong>64. Is pointer a Variable?</strong></p>
+<p>yes, a pointer is a variable and can be used as an element of a structure and as an attribute of a class in some programming languages such as c++, but not Java. However, the contents of a pointer is a memory address of another location of memory, which is usually the memory address of another variable, element of a structure, or attribute of a class.</p>
+<p><strong>65. How many parts are there In a declaration statement?</strong></p>
+<p>there are two main parts, variable identifier and data type and the third type is optional which is type qualifier like signed/unsigned.</p>
+<p><strong>66. How memory Is Reserved using a declaration statement ?</strong></p>
+<p>memory is reserved using data type in the variable declaration. a programming language implementation has predefined sizes for its data types.</p>
+<p>for example:</p>
+<ul>
+<li>in c# the declaration int i; will reserve 32 bits for variable i.</li>
+<li>a pointer declaration reserves memory for the address or the pointer variable, but not for the data that it will point to. the memory for the data pointed by a pointer has to be allocated at runtime.</li>
+<li>the memory reserved by the compiler for simple variables and for storing pointer address is allocated on the stack, while the memory allocated for pointer referenced data at runtime is allocated on the heap.</li>
+</ul>
+<p><strong>67. What Is Impact of signed numbers on the memory?</strong></p>
+<p>sign of the number is the first bit of the storage allocated for that number. so you get one bit less for storing the number. for example if you are storing an 8-bit number, without sign, the range is 0-255. If you decide to store sign you get 7 bits for the number plus one bit for the sign. so the range is -128 to +127.</p>
+<p><strong>68. What Is precision?</strong></p>
+<p>precision refers the accuracy of the decimal portion of a value. precision is the number of digits allowed after the decimal point.</p>
+<p><strong>69. What Is the difference between null and Void pointer?</strong></p>
+<p>null can be value for pointer type variables.<br>
+VoId is a type identifier which has not size.<br>
+null and void are not same. example: void* ptr = null;</p>
+<p><strong>70. What Is the difference between array and stack?</strong></p>
+<p>stacK follows lIfo. thus the item that is first entered would be the last removed.</p>
+<p>In array the items can be entered or removed in any order. basically each member access is done using index. no strict order is to be followed here to remove a particular element.</p>
+<p>array may be multidiamensional or onediamensional but stack should be onediamensional. but both are linear data structure.</p>
+<p><strong>71. tell How to check Whether a linked list Is circular ?</strong></p>
+<p>create two pointers, each set to the start of the list. update each as follows:</p>
+<p>while (pointer1)<br>
+{<br>
+pointer1 = pointer1-&gt;next;<br>
+pointer2 = pointer2-&gt;next;<br>
+if(pointer2)pointer2=pointer2-&gt;next;<br>
+if (pointer1 == pointer2)<br>
+{<br>
+print (”circularn”);<br>
+}<br>
+}</p>
+<p><strong>72. Whether linked list Is linear or non-linear data structure?</strong></p>
+<ul>
+<li>according to access strategies linked list is a linear one.</li>
+<li>according to storage linked list is a non-linear one.</li>
+</ul>
+<p><strong>73. If you are using c language to Implement the Heterogeneous linked list, What pointer type Will you use?</strong></p>
+<p>the heterogeneous linked list contains different data types in its nodes and we need a link, pointer to connect them. It is not possible to use ordinary pointers for this. so we go for void pointer. Void pointer is capable of storing pointer to any type as it is a generic pointer type.</p>
+<p><strong>74. What Is a node class?</strong></p>
+<p>a node class is a class that, relies on the base class for services and implementation, provides a wider interface to users than its base class, relies primarily on virtual functions in its public interface depends on all its direct and indirect base class can be understood only in the context of the base class can be used as base for further derivation can be used to create objects. a node class is a class that has added new services or functionality beyond the services inherited from its base class.</p>
+<p><strong>75. When can you tell that a memory leak Will occur?</strong></p>
+<p>a memory leak occurs when a program loses the ability to free a block of dynamically allocated memory.</p>
+<p><strong>76. How many different trees are possible With 10 nodes ?</strong></p>
+<p>1014 – for example, consider a tree with 3 nodes(n=3), it will have the maximum combination of 5 different (ie, 23 – 3 =? 5) trees.</p>
+<p><strong>77. How can I search for data In a linked list?</strong></p>
+<p>unfortunately, the only way to search a linked list is with a linear search, because the only way a linked list’s members can be accessed is sequentially. sometimes it is quicker to take the data from a linked list and store it in a different data structure so that searches can be more efficient.</p>
+<p><strong>78. define data structures?</strong></p>
+<p>data structures is defined as the way of organizing all data items that consider not only the elements stored but also stores the relationship between the elements.</p>
+<p><strong>79. define primary data structures?</strong></p>
+<p>primary data structures are the basic data structures that directly operate upon the machine instructions. all the basic constants (integers, floating-point numbers, character constants, string constants) and pointers are considered as primary data structures.</p>
+<p><strong>80. define static data structures?</strong></p>
+<p>a data structure formed when the number of data items are known in advance is referred as static data structure or fixed size data structure.</p>
+<p><strong>81. list some of the static data structures In c?</strong></p>
+<p>some of the static data structures in c are arrays, pointers, structures etc.</p>
+<p><strong>82. define dynamic data structures?</strong></p>
+<p>a data structure formed when the number of data items are not known in advance is known as dynamic data structure or variable size data structure.</p>
+<p><strong>83. list some of the dynamic data structures In c?</strong></p>
+<p>some of the dynamic data structures in c are linked lists, stacks, queues, trees etc.</p>
+<p><strong>84. define linear data structures?</strong></p>
+<p>linear data structures are data structures having a linear relationship between its adjacent elements.</p>
+<p>eg; linked lists.</p>
+<p><strong>85. define non-linear data structures?</strong></p>
+<p>non-linear data structures are data structures that don’t have a linear relationship between its adjacent elements but have a hierarchical relationship between the elements.</p>
+<p>eg; trees and graphs.</p>
+<p><strong>86. define linked lists?</strong></p>
+<p>linked list consists of a series of structures, which are not necessarily adjacent in memory. each structure contains the element and a pointer to a structure containing its successor. We call this the next pointer. the last cell’s next pointer points to null.</p>
+<p><strong>87. state the different types of linked lists?</strong></p>
+<p>the different types of linked list include singly linked list, doubly linked list and circular linked list.</p>
+<p><strong>88. list the basic operations carried out In a linked list?</strong></p>
+<p>the basic operations carried out in a linked list include:</p>
+<ul>
+<li>creation of a list.</li>
+<li>Insertion of a node.</li>
+<li>deletion of a node.</li>
+<li>modification of a node.</li>
+<li>traversal of the list.</li>
+</ul>
+<p><strong>89. list out the advantages of using a linked list?</strong></p>
+<p>It is not necessary to specify the number of elements in a linked list during its declaration.<br>
+linked list can grow and shrink in size depending upon the insertion and deletion that occurs in the list.<br>
+Insertions and deletions at any place in a list can be handled easily and efficiently.<br>
+a linked list does not waste any memory space.</p>
+<p><strong>90. list out the disadvantages of using a linked list?</strong></p>
+<p>searching a particular element in a list is difficult and time consuming.<br>
+a linked list will use more storage space than an array to store the same number of elements.</p>
+<p><strong>91. list out the applications of a linked list?</strong></p>
+<p>some of the important applications of linked lists are manipulation of polynomials, sparse matrices, stacks and queues.</p>
+<p><strong>92. state the difference between arrays and linked lists?</strong></p>
+<p>submit</p>
+<p><strong>93. define a stack?</strong></p>
+<p>stack is an ordered collection of elements in which insertions and deletions are restricted to one end. the end from which elements are added and/or removed is referred to as top of the stack. stacks are also referred as piles, push-down lists and last-in-first-out (lIfo) lists.</p>
+<p><strong>94. list out the basic operations that can be performed on a stack ?</strong></p>
+<p>the basic operations that can be performed on a stack are</p>
+<ul>
+<li>push operation.</li>
+<li>pop operation.</li>
+<li>peek operation.</li>
+<li>empty check.</li>
+<li>fully occupied check.</li>
+</ul>
+<p><strong>95. State the different Ways of representing expressions?</strong></p>
+<p>the different ways of representing expressions are</p>
+<ul>
+<li>Infix notation.</li>
+<li>prefix notation.</li>
+<li>postfix notation.</li>
+</ul>
+<p><strong>96. State the advantages of using Infix notations?</strong></p>
+<ol>
+<li>It is the mathematical way of representing the expression.</li>
+<li>It is easier to see visually which operation is done from first to last.</li>
+</ol>
+<p><strong>97. state the advantages of using postfix notations?</strong></p>
+<ul>
+<li>need not worry about the rules of precedence.</li>
+<li>need not worry about the rules for right to left associativity.</li>
+<li>need not need parenthesis to override the above rules.</li>
+</ul>
+<p><strong>98. What is a linked list?</strong></p>
+<p>a linked list is a sequence of nodes in which each node is connected to the node following it. this forms a chain-like link for data storage.</p>
+<p><strong>99. state the Rules to be followed during Infix to prefix conversions?</strong></p>
+<ul>
+<li>fully parenthesize the expression starting from left to right. during parenthesizing, the operators having higher precedence are first parenthesized.</li>
+<li>move the operators one by one to their left, such that each operator replaces their corresponding left parenthesis.</li>
+<li>the part of the expression, which has been converted into prefix is to be treated as single operand.</li>
+<li>once the expression is converted into prefix form, remove all parenthesis.</li>
+</ul>
+<p><strong>100. state the difference between stacks and linked lists?</strong></p>
+<p>the difference between stacks and linked lists is that insertions and deletions may occur anywhere in a linked list, but only at the top of the stack.</p>
+<p>between queues and linked lists is that insertions and deletions may occur anywhere in the linked list, but in queues insertions can be made only in the rear end and deletions can be made only in the front end.</p>
+
+
+</body></html>

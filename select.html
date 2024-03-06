@@ -1,0 +1,250 @@
+<html lang="en-US"><head>
+<title>Workedio document</title>
+<style media="screen">
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  line-height: 140%;
+  background-color: #f3f6f6;
+  opacity: 0.3;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f3f6f6 50px ), repeating-linear-gradient( #56d1b355, #56d1b3 );
+  opacity: 1;
+  display: grid;
+  place-items: center;
+}
+.card {
+  background: #fff;
+  color: #333;
+  margin: 15rem auto;
+  width: 90%;
+  max-width: 80rem;
+  min-height: 40rem;
+  border-radius: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-55%);
+}
+.hero .img {
+  filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+  transition: 0.3s ease-out;
+}
+.card:hover .img {
+  filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.acc-container {
+  padding: 4rem 2rem;
+}
+.acc-btn {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  outline: none;
+  text-align: left;
+  transition: all 0.5s linear;
+}
+.acc-btn:after {
+  content: "\27A4";
+  color: #fa8d0c;
+  float: right;
+  transition: all 0.3s linear;
+}
+.acc-btn.is-open:after {
+  transform: rotate(90deg);
+}
+.acc-btn:hover, .acc-btn.is-open {
+  color: #000;
+  font-weight: bold;
+}
+
+.acc-content {
+  max-height: 0;
+  color: rgba(0,0,0,0.75);
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  padding-left: 1rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-bottom: 1px solid #ccc;
+}
+
+.credit {
+  text-align: center;
+  padding: 1rem;
+}
+.credit a {
+  text-decoration: wavy underline;
+  color: dodgerblue;
+}
+
+
+/* CSS */
+.button-9 {
+  touch-action: manipulation;
+  align-self: auto;
+  background-color: #bebdd4;
+  background-image: linear-gradient(#b169ff, #653dbb);
+  border-radius: 23px;
+  box-shadow: rgba(131, 50, 234, .01) 0 41px 17px, rgba(131, 50, 234, .05) 0 23px 14px, rgba(131, 50, 234, .09) 0 10px 10px, rgba(131, 50, 234, .1) 0 3px 6px;
+  color: #fff;
+  font-family: Greycliff, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 46px;
+  left: auto;
+  line-height: 1;
+  padding: 8px 24px 10px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  transition: all .3s ease-in-out;
+  transition-behavior: normal;
+  z-index: 2;
+}
+.button-9 {
+  touch-action: manipulation;
+  border-style: initial;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.button-9:active,
+.button-9:hover {
+  background-image: linear-gradient(#8456d8, #3e0e99);
+}
+
+.button-9:active {
+  box-shadow: rgba(131, 50, 234, .1) 0 3px 6px;
+}
+
+.button-8 {
+  touch-action: manipulation;
+  align-self: auto;
+  background-color: red;
+  background-image: red;
+  border-radius: 23px;
+  box-shadow: rgba(131, 50, 234, .01) 0 41px 17px, rgba(131, 50, 234, .05) 0 23px 14px, rgba(131, 50, 234, .09) 0 10px 10px, rgba(131, 50, 234, .1) 0 3px 6px;
+  color: #fff;
+  font-family: Greycliff, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 46px;
+  left: auto;
+  line-height: 1;
+  padding: 8px 24px 10px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  transition: all .3s ease-in-out;
+  transition-behavior: normal;
+  z-index: 2;
+}
+.button-8 {
+  touch-action: manipulation;
+  border-style: initial;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.button-8:active,
+.button-8:hover {
+  background-image: linear-gradient(#8456d8, #3e0e99);
+}
+
+.button-8:active {
+  box-shadow: rgba(131, 50, 234, .1) 0 3px 6px;
+}
+
+
+
+
+
+</style>
+</head>
+<main class="card">
+  <div class="hero">
+    <img src="assets/img/logo.png" alt="Workedio" class="img">
+    <br>
+
+  </div>
+<center>  <h2>Workedio</h2></center>
+<br>
+  <center><h1 class="">Select your degree</h1></center>
+
+
+  <br>
+  <br>
+
+  <br>
+
+
+    <!-- HTML !-->
+  <center>  <a href="cse.html"><button class="button-9" role="button">
+      <span class="text">CSE</span>  </button></a>
+
+      <a href="#" ><button class="button-9" role="button">
+         <span class="text">EEE</span>  </button> </a>
+
+         <a href="#" ><button class="button-9" role="button">
+            <span class="text">ECE</span>  </button> </a>
+
+            <a href="#" ><button class="button-9" role="button">
+               <span class="text">Civil</span>  </button> </a>
+
+               <a href="#" ><button class="button-9" role="button">
+                  <span class="text">MECH</span>  </button> </a>
+
+  </center>
+<br>
+    <center>  <a href="index.html"><button class="button-8" role="button">
+        <span class="text">Back to Home</span>
+      </button></a></center>
+
+  </div>
+</main>
+
+
+<script>
+  const btns = document.querySelectorAll(".acc-btn");
+
+// fn
+function accordion() {
+  // this = the btn | icon & bg changed
+  this.classList.toggle("is-open");
+
+  // the acc-content
+  const content = this.nextElementSibling;
+
+  // IF open, close | else open
+  if (content.style.maxHeight) content.style.maxHeight = null;
+  else content.style.maxHeight = content.scrollHeight + "px";
+}
+
+// event
+btns.forEach((el) => el.addEventListener("click", accordion));
+</script>
+</html>

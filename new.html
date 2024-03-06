@@ -1,0 +1,237 @@
+<html>
+<body>
+<center>
+
+  <br>
+  <h2>Workedio!</h2>
+  <h4> <u>C Language FQA </u></h4>
+  </center>
+
+<p><strong>1. What is C language?</strong></p>
+<p>C is a mid-level and procedural programming language. The Procedural programming language is also known as the structured programming language is a technique in which large programs are broken down into smaller modules, and each module uses structured code. This technique minimizes error and misinterpretation.</p>
+<p><strong>2. Why is C known as a mother language?</strong></p>
+<p>C is known as a mother language because most of the compilers and JVMs are written in C language. Most of the languages which are developed after C language has borrowed heavily from it like C++, Python, Rust, javascript, etc. It introduces new core concepts like arrays, functions, file handling which are used in these languages.</p>
+<p><strong>3. Why is C called a mid-level programming language?</strong></p>
+<p>C is called a mid-level programming language because it binds the low level and high -level programming language. We can use C language as a System programming to develop the operating system as well as an Application programming to generate menu driven customer driven billing system.</p>
+<p><strong>4. Who is the founder of C language?</strong></p>
+<p>Dennis Ritchie.</p>
+<p><strong>5. When was C language developed?</strong></p>
+<p>C language was developed in 1972 at bell laboratories of AT&amp;T.</p>
+<p><strong>6. In C programming, Explain How do you insert quote characters (? and ?) into the output screen? </strong></p>
+<p>This is a common problem for beginners because quotes are normally part of a printf statement. To insert the quote character as part of the output, use the format specifiers \? (for single quote), and \? (for double quote).</p>
+<p><strong>7.What is the difference between the = symbol and == symbol? </strong></p>
+<p>The = symbol is often used in mathematical operations. It is used to assign a value to a given variable. On the other hand, the == symbol, also known as ?equal to? or ?equivalent to?, is a relational operator that is used to compare two values.</p>
+<p><strong>8. Which of the following operators is incorrect and why? ( &gt;=, &lt;=, &lt;&gt;, ==)</strong></p>
+<p>&lt;&gt; is incorrect. While this operator is correctly interpreted as ?not equal to? in writing conditional statements, it is not the proper operator to be used in C programming. Instead, the operator != must be used to indicate ?not equal to? condition.</p>
+<p><strong>9. Can the curly brackets { } be used to enclose a single line of code?</strong></p>
+<p>While curly brackets are mainly used to group several lines of codes, it will still work without error if you used it for a single line. Some programmers prefer this method as a way of organizing codes to make it look clearer, especially in conditional statements.</p>
+<p><strong>10. What are header files and Explain What are its uses in C programming?</strong></p>
+<p>Header files are also known as library files. They contain two essential things: the definitions and prototypes of functions being used in a program. Simply put, commands that you use in C programming are actually functions that are defined from within each header files. Each header file contains a set of functions. For example: stdio.h is a header file that contains definition and prototypes of commands like printf and scanf.</p>
+<p><strong>11. Can I use ?int? data type to store the value 32768? Why?</strong></p>
+<p>No. ?int? data type is capable of storing values from -32768 to 32767. To store 32768, you can use ?long int? instead. You can also use ?unsigned int?, assuming you don?t intend to store negative values.</p>
+<p><strong>12. Can two or more operators such as \n and \t be combined in a single line of program code</strong></p>
+<p>Yes, it?s perfectly valid to combine operators, especially if the need arises. For example: you can have a code like ? printf (?Hello\n\n\?World\??) ? to output the text ?Hello? on the first line and ?World? enclosed in single quotes to appear on the next two lines.</p>
+<p><strong>13. Why is it that not all header files are declared in every C program?</strong></p>
+<p>The choice of declaring a header file at the top of each C program would depend on Explain What commands/functions you will be using in that program. Since each header file contains different function definitions and prototype, you would be using only those header files that would contain the functions you will need. Declaring all header files in every program would only increase the overall file size and load of the program, and is not considered a good programming style.</p>
+<p><strong>14. When is the ?void? keyword used in a function?</strong></p>
+<p>When declaring functions, you will decide whether that function would be returning a value or not. If that function will not return a value, such as when the purpose of a function is to display some outputs on the screen, then ?void? is to be placed at the leftmost part of the function header. When a return value is expected after the function execution, the data type of the return value is placed instead of ?void?.</p>
+<p><strong>15. What are compound statements?</strong></p>
+<p>Compound statements are made up of two or more program statements that are executed together. This usually occurs while handling conditions wherein a series of statements are executed when a TRUE or FALSE is evaluated. Compound statements can also be executed within a loop. Curly brackets { } are placed before and after compound statements.</p>
+<p><strong>16. Write a loop statement that will sExplain How the following output:</strong><br>
+1<br>
+12<br>
+123<br>
+1234<br>
+12345<br>
+[c]<br>
+for (a=1; a&lt;=5; i++) {<br>
+for (b=1; b&lt;=a; b++) printf(“%d”,b); printf(“\n”); } [/c]</p>
+<p><strong>17. What is wrong in this statement? </strong></p>
+<p>scanf(?%d?,Explain Whatnumber); An ampersand &amp; symbol must be placed before the variable name Explain Whatnumber. Placing &amp; means Explain Whatever integer value is entered by the user is stored at the ?address? of the variable name. This is a common mistake for programmers, often leading to logical errors.</p>
+<p><strong>18. How do you generate random numbers in C? </strong></p>
+<p>Random numbers are generated in C using the rand() command. For example: anyNum = rand() will generate any integer number beginning from 0, assuming that anyNum is a variable of type integer.</p>
+<p><strong>19. What could possibly be the problem if a valid function name such as tolower() is being reported by the C compiler as undefined? </strong></p>
+<p>The most probable reason behind this error is that the header file for that function was not indicated at the top of the program. Header files contain the definition and prototype for functions and commands used in a C program. In the case of ?tolower()?, the code ?#include ? must be present at the beginning of the program.</p>
+<p><strong>20. What does the format %10.2 mean when included in a printf statement? </strong></p>
+<p>This format is used for two things: to set the number of spaces allotted for the output number and to set the number of decimal places. The number before the decimal point is for the allotted space, in this case it would allot 10 spaces for the output number. If the number of space occupied by the output number is less than 10, addition space characters will be inserted before the actual output number. The number after the decimal point sets the number of decimal places, in this case, it?s 2 decimal spaces.</p>
+<p><strong>21. What is wrong with this statement? myName = ?Robin?; </strong></p>
+<p>You cannot use the = sign to assign values to a string variable. Instead, use the strcpy function. The correct statement would be: strcpy(myName, ?Robin?);</p>
+<p><strong>22. How do you determine the length of a string value that was stored in a variable? </strong></p>
+<p>To get the length of a string value, use the function strlen(). For example, if you have a variable named FullName, you can get the length of the stored string value by using this statement: I = strlen(FullName); the variable I will now have the character length of the string value.</p>
+<p><strong>23. Is it possible to initialize a variable at the time it was declared? </strong></p>
+<p>Yes, you don?t have to write a separate assignment statement after the variable declaration, unless you plan to change it later on. For example: char planet[15] = ?Earth?; does two things: it declares a string variable named planet, then initializes it with the value ?Earth?.</p>
+<p><strong>24. What are the different file extensions involved when programming in C? </strong></p>
+<p>Source codes in C are saved with .C file extension. Header files or library files have the .H file extension. Every time a program source code is successfully compiled, it creates an .OBJ object file, and an executable .EXE file.</p>
+<p><strong>25. What are reserved words? </strong></p>
+<p>Reserved words are words that are part of the standard C language library. This means that reserved words have special meaning and therefore cannot be used for purposes other than Explain What it is originally intended for. Examples of reserved words are int, void, and return.</p>
+<p><strong>26. What are linked list? </strong></p>
+<p>A linked list is composed of nodes that are connected with another. In C programming, linked lists are created using pointers. Using linked lists is one efficient way of utilizing memory for storage.</p>
+<p><strong>27. What are binary trees? </strong></p>
+<p>Binary trees are actually an extension of the concept of linked lists. A binary tree has two pointers, a left one and a right one. Each side can further branch to form additional nodes, Explain Which each node having two pointers as well.</p>
+<p><strong>28. Not all reserved words are written in lowercase. TRUE or FALSE? </strong></p>
+<p>FALSE.</p>
+<p>All reserved words must be written in lowercase; otherwise the C compiler would interpret this as unidentified and invalid.</p>
+<p><strong>29. What is wrong with this program statement? </strong></p>
+<p>void = 10; The word void is a reserved word in C language. You cannot use reserved words as a user-defined variable.</p>
+<p><strong>30. Is this program statement valid?</strong></p>
+<p>INT = 10.50; Assuming that INT is a variable of type float, this statement is valid. One may think that INT is a reserved word and must not be used for other purposes. Explain However, recall that reserved words are express in lowercase, so the C compiler will not interpret this as a reserved word.</p>
+<p><strong>31. What is a newline escape sequence? </strong></p>
+<p>A newline escape sequence is represented by the \n character. This is used to insert a new line when displaying data in the output screen. More spaces can be added by inserting more \n characters. For example, \n\n would insert two spaces. A newline escape sequence can be placed before the actual output expression or after.</p>
+<p><strong>32. What is output redirection?</strong></p>
+<p>It is the process of transferring data to an alternative output source other than the display screen. Output redirection allows a program to have its output saved to a file. For example, if you have a program named COMPUTE, typing this on the command line as COMPUTE &gt;DATA can accept input from the user, perform certain computations, then have the output redirected to a file named DATA, instead of sExplain Howing it on the screen.</p>
+<p><strong>33. What is the difference between functions abs() and fabs()?</strong></p>
+<p>These 2 functions basically perform the same action, Explain Which is to get the absolute value of the given value. Abs() is used for integer values, while fabs() is used for floating type numbers. Also, the prototype for abs() is under , while fabs() is under .</p>
+<p><strong>34. Write a simple code fragment that will check if a number is positive or negative.</strong></p>
+<p>[c]</p>
+<p>If (num&gt;=0)<br>
+printf(“number is positive”);<br>
+else<br>
+printf (“number is negative”);<br>
+[/c]</p>
+<p><strong>35. What does the function toupper() do?</strong></p>
+<p>It is used to convert any letter to its upper case mode. Toupper() function prototype is declared in . Note that this function will only convert a single character, and not an entire string.</p>
+<p><strong>36. Which function in C can be used to append a string to another string?</strong></p>
+<p>The strcat function. It takes two parameters, the source string and the string value to be appended to the source string.</p>
+<p><strong>37. Do these two program statements perform the same output? 1) scanf(?%c?, &amp;letter); 2) letter=getchar()</strong></p>
+<p>Yes, they both do the exact same thing, Explain Which is to accept the next key pressed by the user and assign it to variable named letter.</p>
+<p><strong>38. What is the difference between text files and binary files?</strong></p>
+<p>Text files contain data that can easily be understood by humans. It includes letters, numbers and other characters. On the other hand, binary files contain 1s and 0s that only computers can interpret.</p>
+<p><strong>39. is it possible to create your own header files?</strong></p>
+<p>Yes, it is possible to create a customized header file. Just include in it the function prototypes that you want to use in your program, and use the #include directive followed by the name of your header file.</p>
+<p><strong>40. What is dynamic data structure?</strong></p>
+<p>Dynamic data structure provides a means for storing data more efficiently into memory. Using dynamic memory allocation, your program will access memory spaces as needed. This is in contrast to static data structure, wherein the programmer has to indicate a fix number of memory space to be used in the program.</p>
+<p><strong>41. The % symbol has a special use in a printf statement. Explain How would you place this character as part of the output on the screen?</strong></p>
+<p>You can do this by using %% in the printf statement. For example, you can write printf(?10%%?) to have the output appear as 10% on the screen.</p>
+<p><strong>42. What are the advantages and disadvantages of a heap?</strong></p>
+<p>Storing data on the heap is slower than it would take when using the stack. Explain However, the main advantage of using the heap is its flexibility. That?s because memory in this structure can be allocated and remove in any particular order. Slowness in the heap can be compensated if an algorithm was well designed and implemented.</p>
+<p><strong>43. What are preprocessor directives?</strong></p>
+<p>Preprocessor directives are placed at the beginning of every C program. This is where library files are specified, Explain Which would depend on Explain What functions are to be used in the program. Another use of preprocessor directives is the declaration of constants.Preprocessor directives begin with the # symbol.</p>
+<p><strong>44. What will be the outcome of the following conditional statement if the value of variable s is 10?</strong></p>
+<p>s &gt;=10 &amp;&amp; s &lt; 25 &amp;&amp; s!=12 The outcome will be TRUE. Since the value of s is 10, s &gt;= 10 evaluates to TRUE because s is not greater than 10 but is still equal to 10. s&lt; 25 is also TRUE since 10 is less then 25. Just the same, s!=12, Explain Which means s is not equal to 12, evaluates to TRUE. The &amp;&amp; is the AND operator, and follows the rule that if all individual conditions are TRUE, the entire statement is TRUE.</p>
+<p><strong>45. Describe the order of precedence with regards to operators in C.</strong></p>
+<p>Order of precedence determines Explain Which operation must first take place in an operation statement or conditional statement. On the top most level of precedence are the unary operators !, +, – and &amp;. It is followed by the regular mathematical operators (*, / and modulus % first, followed by + and -). Next in line are the relational operators &lt;, &lt;=, &gt;= and &gt;. This is then followed by the two equality operators == and !=. The logical operators &amp;&amp; and || are next evaluated. On the last level is the assignment operator =.</p>
+<p><strong>46. What is wrong with this statement? myName = “Robin”;</strong></p>
+<p>You cannot use the = sign to assign values to a string variable. Instead, use the strcpy function. The correct statement would be: strcpy(myName, “Robin”);</p>
+<p><strong>47. How do you determine the length of a string value that was stored in a variable?</strong></p>
+<p>To get the length of a string value, use the function strlen(). For example, if you have a variable named FullName, you can get the length of the stored string value by using this statement: I = strlen(FullName); the variable I will now have the character length of the string value.</p>
+<p><strong>48. Is it possible to initialize a variable at the time it was declared?</strong></p>
+<p>Yes, you don’t have to write a separate assignment statement after the variable declaration, unless you plan to change it later on. For example: char planet[15] = “Earth”; does two things: it declares a string variable named planet, then initializes it with the value “Earth”.</p>
+<p><strong>49. Why is C language being considered a middle level language?</strong></p>
+<p>This is because C language is rich in features that make it behave like a high level language while at the same time can interact with hardware using low level methods. The use of a well structured approach to programming, coupled with English-like words used in functions, makes it act as a high level language. On the other hand, C can directly access memory structures similar to assembly language routines.</p>
+<p><strong>50. What are the different file extensions involved when programming in C?</strong></p>
+<p>Source codes in C are saved with .C file extension. Header files or library files have the .H file extension. Every time a program source code is successfully compiled, it creates an .OBJ object file, and an executable .EXE file.</p>
+<h3><em><strong>C PROGRAMMING LANGUAGE Interview Questions and Answers :-</strong></em></h3>
+<p><strong>51. What are reserved words?</strong></p>
+<p>Reserved words are words that are part of the standard C language library. This means that reserved words have special meaning and therefore cannot be used for purposes other than Explain What it is originally intended for. Examples of reserved words are int, void, and return.</p>
+<p><strong>52. What are linked list?</strong></p>
+<p>A linked list is composed of nodes that are connected with another. In C programming, linked lists are created using pointers. Using linked lists is one efficient way of utilizing memory for storage.</p>
+<p><strong>53. What is FIFO?</strong></p>
+<p>In C programming, there is a data structure known as queue. In this structure, data is stored and accessed using FIFO format, or First-In-First-Out. A queue represents a line wherein the first data that was stored will be the first one that is accessible as well.</p>
+<p><strong>54. What are binary trees?</strong></p>
+<p>Binary trees are actually an extension of the concept of linked lists. A binary tree has two pointers, a left one and a right one. Each side can further branch to form additional nodes, Explain Which each node having two pointers as well.</p>
+<p><strong>55. Not all reserved words are written in lowercase. TRUE or FALSE?</strong></p>
+<p>FALSE. All reserved words must be written in lowercase; otherwise the C compiler would interpret this as unidentified and invalid.</p>
+<p><strong>56) Explain What is the difference between the expression “++a” and “a++”?</strong></p>
+<p>In the first expression, the increment would happen first on variable a, and the resulting value will be the one to be used. This is also known as a prefix increment. In the second expression, the current value of variable a would the one to be used in an operation, before the value of a itself is incremented. This is also known as postfix increment.</p>
+<p><strong>57. What would happen to X in this expression: X += 15; (assuming the value of X is 5)</strong></p>
+<p>X +=15 is a short method of writing X = X + 15, so if the initial value of X is 5, then 5 + 15 = 20.</p>
+<p><strong>58. In C language, the variables NAME, name, and Name are all the same. TRUE or FALSE?</strong></p>
+<p>FALSE. C language is a case sensitive language. Therefore, NAME, name and Name are three uniquely different variables.</p>
+<p><strong>59. What is an endless loop?</strong></p>
+<p>An endless loop can mean two things. One is that it was designed to loop continuously until the condition within the loop is met, after Explain Which a break function would cause the program to step out of the loop. Another idea of an endless loop is when an incorrect loop condition was written, causing the loop to run erroneously forever. Endless loops are oftentimes referred to as infinite loops.</p>
+<p><strong>60. What is a program flowchart and Explain How does it help in writing a program?</strong></p>
+<p>A flowchart provides a visual representation of the step by step procedure towards solving a given problem. Flowcharts are made of symbols, with each symbol in the form of different shapes. Each shape may represent a particular entity within the entire program structure, such as a process, a condition, or even an input/output phase.</p>
+<p><strong>61. What is wrong with this program statement? void = 10;</strong></p>
+<p>The word void is a reserved word in C language. You cannot use reserved words as a user-defined variable.</p>
+<p><strong>62. Is this program statement valid? INT = 10.50;</strong></p>
+<p>Assuming that INT is a variable of type float, this statement is valid. One may think that INT is a reserved word and must not be used for other purposes. Explain However, recall that reserved words are express in lowercase, so the C compiler will not interpret this as a reserved word.</p>
+<p><strong>63. What are actual arguments?</strong></p>
+<p>When you create and use functions that need to perform an action on some given values, you need to pass these given values to that function. The values that are being passed into the called function are referred to as actual arguments.</p>
+<p><strong>64. What is a newline escape sequence?</strong></p>
+<p>A newline escape sequence is represented by the n character. This is used to insert a new line when displaying data in the output screen. More spaces can be added by inserting more n characters. For example, nn would insert two spaces. A newline escape sequence can be placed before the actual output expression or after.</p>
+<p><strong>65. What is output redirection?</strong></p>
+<p>It is the process of transferring data to an alternative output source other than the display screen. Output redirection allows a program to have its output saved to a file. For example, if you have a program named COMPUTE, typing this on the command line as COMPUTE &gt;DATA can accept input from the user, perform certain computations, then have the output redirected to a file named DATA, instead of sExplain Howing it on the screen.</p>
+<p><strong>66. What are run-time errors?</strong></p>
+<p>These are errors that occur while the program is being executed. One common instance wherein run-time errors can happen is when you are trying to divide a number by zero. When run-time errors occur, program execution will pause, sExplain Howing Explain Which program line caused the error.</p>
+<p><strong>67. What is the difference between functions abs() and fabs()?</strong></p>
+<p>These 2 functions basically perform the same action, Explain Which is to get the absolute value of the given value. Abs() is used for integer values, while fabs() is used for floating type numbers. Also, the prototype for abs() is under , while fabs() is under .</p>
+<p><strong>68. What are formal parameters?</strong></p>
+<p>In using functions in a C program, formal parameters contain the values that were passed by the calling function. The values are substituted in these formal parameters and used in Explain Whatever operations as indicated within the main body of the called function.</p>
+<p><strong>69. What are control structures?</strong></p>
+<p>Control structures take charge at Explain Which instructions are to be performed in a program. This means that program flow may not necessarily move from one statement to the next one, but rather some alternative portions may need to be pass into or bypassed from, depending on the outcome of the conditional statements.</p>
+<p><strong>70. Write a simple code fragment that will check if a number is positive or negative.</strong></p>
+<p>If (num&gt;=0)</p>
+<p>printf(“number is positive”);</p>
+<p>else</p>
+<p>printf (“number is negative”);</p>
+<p>If (num&gt;=0)</p>
+<p>printf(“number is positive”);</p>
+<p>else</p>
+<p>printf (“number is negative”);</p>
+<p><strong>71. When is a “switch” statement preferable over an “if” statement?</strong></p>
+<p>The switch statement is best used when dealing with selections based on a single variable or expression. Explain However, switch statements can only evaluate integer and character data types.</p>
+<p><strong>72. What are global variables and Explain How do you declare them?</strong></p>
+<p>Global variables are variables that can be accessed and manipulated anywhere in the program. To make a variable global, place the variable declaration on the upper portion of the program, just after the preprocessor directives section.</p>
+<p><strong>73. What are enumerated types?</strong></p>
+<p>Enumerated types allow the programmer to use more meaningful words as values to a variable. Each item in the enumerated type variable is actually associated with a numeric code. For example, one can create an enumerated type variable named DAYS whose values are Monday, Tuesday… Sunday.</p>
+<p><strong>74. What does the function toupper() do?</strong></p>
+<p>It is used to convert any letter to its upper case mode. Toupper() function prototype is declared in . Note that this function will only convert a single character, and not an entire string.</p>
+<p><strong>75. Is it possible to have a function as a parameter in another function?</strong></p>
+<p>Yes, that is allowed in C programming. You just need to include the entire function prototype into the parameter field of the other function where it is to be used.</p>
+<p><strong>76. What are multidimensional arrays?</strong></p>
+<p>Multidimensional arrays are capable of storing data in a two or more dimensional structure. For example, you can use a 2 dimensional array to store the current position of pieces in a chess game, or position of players in a tic-tac-toe program.</p>
+<p><strong>77. Which function in C can be used to append a string to another string?</strong></p>
+<p>The strcat function. It takes two parameters, the source string and the string value to be appended to the source string.</p>
+<p><strong>78. What is the difference between functions getch() and getche()?</strong></p>
+<p>Both functions will accept a character input value from the user. When using getch(), the key that was pressed will not appear on the screen, and is automatically captured and assigned to a variable. When using getche(), the key that was pressed by the user will appear on the screen, while at the same time being assigned to a variable.</p>
+<p><strong>79. What is the use of a semicolon (;) at the end of every program statement?</strong></p>
+<p>It has to do with the parsing process and compilation of the code. A semicolon acts as a delimiter, so that the compiler knows where each statement ends, and can proceed to divide the statement into smaller elements for syntax checking.</p>
+<p><strong>80. What are structure types in C?</strong></p>
+<p>Structure types are primarily used to store records. A record is made up of related fields. This makes it easier to organize a group of related data.</p>
+<p><strong>81. What does the characters “r” and “w” mean when writing programs that will make use of files?</strong></p>
+<p>“r” means “read” and will open a file as input wherein data is to be retrieved. “w” means “write”, and will open a file for output. Previous data that was stored on that file will be erased.</p>
+<p><strong>82. What is the difference between text files and binary files?</strong></p>
+<p>Text files contain data that can easily be understood by humans. It includes letters, numbers and other characters. On the other hand, binary files contain 1s and 0s that only computers can interpret.</p>
+<p><strong>83. is it possible to create your own header files?</strong></p>
+<p>Yes, it is possible to create a customized header file. Just include in it the function prototypes that you want to use in your program, and use the #include directive followed by the name of your header file.</p>
+<p><strong>84. What is dynamic data structure?</strong></p>
+<p>Dynamic data structure provides a means for storing data more efficiently into memory. Using dynamic memory allocation, your program will access memory spaces as needed. This is in contrast to static data structure, wherein the programmer has to indicate a fix number of memory space to be used in the program.</p>
+<p><strong>85. What are the different data types in C?</strong></p>
+<p>The basic data types are int, char, and float. Int is used to declare variables that will be storing integer values. Float is used to store real numbers. Char can store individual character values.</p>
+<p><strong>86. What is the general form of a C program?</strong></p>
+<p>A C program begins with the preprocessor directives, in Explain Which the programmer would specify Explain Which header file and Explain What constants (if any) to be used. This is followed by the main function heading. Within the main function lies the variable declaration and program statement.</p>
+<p><strong>87. What is the advantage of a random access file?</strong></p>
+<p>If the amount of data stored in a file is fairly large, the use of random access will allow you to search through it quicker. If it had been a sequential access file, you would have to go through one record at a time until you reach the target data. A random access file lets you jump directly to the target address where data is located.</p>
+<p><strong>88. In a switch statement, Explain What will happen if a break statement is omitted?</strong></p>
+<p>If a break statement was not placed at the end of a particular case portion? It will move on to the next case portion, possibly causing incorrect output.</p>
+<p><strong>89. How arrays can be passed to a user defined function</strong></p>
+<p>One thing to note is that you cannot pass the entire array to a function. Instead, you pass to it a pointer that will point to the array first element in memory. To do this, you indicate the name of the array without the brackets.</p>
+<p><strong>90. What are pointers?</strong></p>
+<p>Pointers point to specific areas in the memory. Pointers contain the address of a variable, Explain Which in turn may contain a value or even an address to another memory.</p>
+<p><strong>91. Can you pass an entire structure to functions?</strong></p>
+<p>Yes, it is possible to pass an entire structure to a function in a call by method style. Explain However, some programmers prefer declaring the structure globally, then pass a variable of that structure type to a function. This method helps maintain consistency and uniformity in terms of argument type.</p>
+<p><strong>92. What is gets() function?</strong></p>
+<p>The gets() function allows a full line data entry from the user. When the user presses the enter key to end the input, the entire line of characters is stored to a string variable. Note that the enter key is not included in the variable, but instead a null terminator is placed after the last character.</p>
+<p><strong>93. The % symbol has a special use in a printf statement. Explain How would you place this character as part of the output on the screen?</strong></p>
+<p>You can do this by using %% in the printf statement. For example, you can write printf(“10%%”) to have the output appear as 10% on the screen.</p>
+<p><strong>94. Explain How do you search data in a data file using random access method?</strong></p>
+<p>Use the fseek() function to perform random access input/ouput on a file. After the file was opened by the fopen() function, the fseek would require three parameters to work: a file pointer to the file, the number of bytes to search, and the point of origin in the file.</p>
+<p><strong>95. Are comments included during the compilation stage and placed in the EXE file as well?</strong></p>
+<p>No, comments that were encountered by the compiler are disregarded. Comments are mostly for the guidance of the programmer only and do not have any other significant use in the program functionality.</p>
+<p><strong>96. Is there a built-in function in C that can be used for sorting data?</strong></p>
+<p>Yes, use the qsort() function. It is also possible to create user defined functions for sorting, such as those based on the balloon sort and bubble sort algorithm.</p>
+<p><strong>97. What are the advantages and disadvantages of a heap?</strong></p>
+<p>Storing data on the heap is slower than it would take when using the stack. Explain However, the main advantage of using the heap is its flexibility. That’s because memory in this structure can be allocated and remove in any particular order. Slowness in the heap can be compensated if an algorithm was well designed and implemented.</p>
+<p><strong>98. How do you convert strings to numbers in C?</strong></p>
+<p>You can write you own functions to do string to number conversions, or instead use C’s built in functions. You can use atof to convert to a floating point value, atoi to convert to an integer value, and atol to convert to a long integer value.</p>
+<p><strong>99. Create a simple code fragment that will swap the values of two variables num1 and num2.</strong></p>
+<p>int temp;</p>
+<p>temp = num1;</p>
+<p>num1 = num2;</p>
+<p>num2 = temp;</p>
+<p>int temp;</p>
+<p>temp = num1;</p>
+<p>num1 = num2;</p>
+<p>num2 = temp;</p>
+</body>
+</html>

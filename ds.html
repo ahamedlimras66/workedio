@@ -1,0 +1,278 @@
+<html lang="en-US"><head>
+<title>Workedio QA</title>
+<style media="screen">
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  line-height: 140%;
+  background-color: #f3f6f6;
+  opacity: 0.3;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f3f6f6 50px ), repeating-linear-gradient( #56d1b355, #56d1b3 );
+  opacity: 1;
+  display: grid;
+  place-items: center;
+}
+.card {
+  background: #fff;
+  color: #333;
+  margin: 15rem auto;
+  width: 90%;
+  max-width: 50rem;
+  min-height: 30rem;
+  border-radius: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-55%);
+}
+.hero .img {
+  filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+  transition: 0.3s ease-out;
+}
+.card:hover .img {
+  filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.acc-container {
+  padding: 4rem 2rem;
+}
+.acc-btn {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  outline: none;
+  text-align: left;
+  transition: all 0.5s linear;
+}
+.acc-btn:after {
+  content: "\27A4";
+  color: #fa8d0c;
+  float: right;
+  transition: all 0.3s linear;
+}
+.acc-btn.is-open:after {
+  transform: rotate(90deg);
+}
+.acc-btn:hover, .acc-btn.is-open {
+  color: #000;
+  font-weight: bold;
+}
+
+.acc-content {
+  max-height: 0;
+  color: rgba(0,0,0,0.75);
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  padding-left: 1rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-bottom: 1px solid #ccc;
+}
+
+.credit {
+  text-align: center;
+  padding: 1rem;
+}
+.credit a {
+  text-decoration: wavy underline;
+  color: dodgerblue;
+}
+
+
+/* CSS */
+.button-9 {
+  touch-action: manipulation;
+  align-self: auto;
+  background-color: #bebdd4;
+  background-image: linear-gradient(#b169ff, #653dbb);
+  border-radius: 23px;
+  box-shadow: rgba(131, 50, 234, .01) 0 41px 17px, rgba(131, 50, 234, .05) 0 23px 14px, rgba(131, 50, 234, .09) 0 10px 10px, rgba(131, 50, 234, .1) 0 3px 6px;
+  color: #fff;
+  font-family: Greycliff, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 46px;
+  left: auto;
+  line-height: 1;
+  padding: 8px 24px 10px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  transition: all .3s ease-in-out;
+  transition-behavior: normal;
+  z-index: 2;
+}
+.button-9 {
+  touch-action: manipulation;
+  border-style: initial;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.button-9:active,
+.button-9:hover {
+  background-image: linear-gradient(#8456d8, #3e0e99);
+}
+
+.button-9:active {
+  box-shadow: rgba(131, 50, 234, .1) 0 3px 6px;
+}
+
+.button-8 {
+  touch-action: manipulation;
+  align-self: auto;
+  background-color: red;
+  background-image: red;
+  border-radius: 23px;
+  box-shadow: rgba(131, 50, 234, .01) 0 41px 17px, rgba(131, 50, 234, .05) 0 23px 14px, rgba(131, 50, 234, .09) 0 10px 10px, rgba(131, 50, 234, .1) 0 3px 6px;
+  color: #fff;
+  font-family: Greycliff, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 46px;
+  left: auto;
+  line-height: 1;
+  padding: 8px 24px 10px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  transition: all .3s ease-in-out;
+  transition-behavior: normal;
+  z-index: 2;
+}
+.button-8 {
+  touch-action: manipulation;
+  border-style: initial;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.button-8:active,
+.button-8:hover {
+  background-image: linear-gradient(#8456d8, #3e0e99);
+}
+
+.button-8:active {
+  box-shadow: rgba(131, 50, 234, .1) 0 3px 6px;
+}
+
+
+
+
+
+</style>
+</head>
+<main class="card">
+  <div class="hero">
+    <img src="assets/img/logo.png" alt="Workedio" class="img">
+    <br>
+
+  </div>
+<center>  <h2>Workedio</h2></center>
+<br>
+  <h4 class="title">Data Structures </h4>
+
+  <div class="acc-container">
+
+    <button class="acc-btn">What is data structure?</button>
+    <div class="acc-content">
+      <p>a data structure is a way of organizing data that considers not only the items stored, but also their relationship to each other. advance knowledge about the relationship between data items allows designing of efficient algorithms for the manipulation of data.</p>
+  </div>
+
+    <button class="acc-btn"> If you are using c language to implement the heterogeneous linked list, What pointer type will you use?
+    </button>
+    <div class="acc-content">
+      <p>the heterogeneous linked list contains different data types in its nodes and we need a link, pointer to connect them. It is not possible to use ordinary pointers for this. so we go for void pointer. Void pointer is capable of storing pointer to any type as it is a generic pointer type.</p>
+  </div>
+
+    <button class="acc-btn"> Minimum number of queues needed to implement the priority queue? </button>
+    <div class="acc-content">
+      <p>two. one queue is used for actual storing of data and another for storing priorities.</p>
+  </div>
+
+    <button class="acc-btn">
+      What is the data structures used to perform recursion?
+    </button>
+    <div class="acc-content">
+      <p>stack. because of its lIfo (last In first out) property it remembers its ‘caller’ so knows whom to return when the function has to return. Recursion makes use of system stack for storing the return addresses of the function calls.</p>
+      <p>every recursive function has its equivalent iterative (non-recursive) function. even when such equivalent iterative procedures are written, explicit stack is to be used.</p>
+
+    </div>
+
+    <button class="acc-btn">
+  What are the notations used in evaluation of arithmetic expressions using prefix and postfix forms?
+    </button>
+    <div class="acc-content">
+      <p>polish and Reverse polish notations.</p>
+
+    </div>
+
+    <button class="acc-btn">
+    sorting is not possible by using which of the following methods? (Insertion, selection, exchange, deletion)  </button>
+    <div class="acc-content">
+      <p>sorting is not possible in deletion. using insertion we can perform insertion sort, using selection we can perform selection sort, using exchange we can perform the bubble sort (and other similar sorting methods). but no sorting method can be done just using deletion.</p>
+
+    </div>
+
+
+
+  <br>
+
+    <!-- HTML !-->
+  <center> <a href="select.html"> <button class="button-9" role="button">
+      <span class="text">Back Menu</span>
+    </button></a></center>
+<br>
+    <center>  <a href="ds.pdf" target="_blank"><button class="button-8" role="button">
+        <span class="text">Download PDF</span>
+      </button></a></center>
+
+  </div>
+</main>
+
+<p class="credit">
+
+</p>
+<script>
+  const btns = document.querySelectorAll(".acc-btn");
+
+// fn
+function accordion() {
+  // this = the btn | icon & bg changed
+  this.classList.toggle("is-open");
+
+  // the acc-content
+  const content = this.nextElementSibling;
+
+  // IF open, close | else open
+  if (content.style.maxHeight) content.style.maxHeight = null;
+  else content.style.maxHeight = content.scrollHeight + "px";
+}
+
+// event
+btns.forEach((el) => el.addEventListener("click", accordion));
+</script>
+</html>
